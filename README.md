@@ -23,7 +23,7 @@ A Streamlit dashboard that detects different types of cyberattacks using machine
 
 - Includes visualizations: protocol counts, packet/byte histograms, class distribution
 
-**Streamlit Dashboard**
+**Streamlit Dashboard 🖥️**
 
 The dashboard includes:
 
@@ -32,7 +32,7 @@ The dashboard includes:
 - Scan DDoS
 Each section provides real-time predictions through a simple interface.
 
-**Run Locally**
+**Run Locally 🚀**
 
 pip install -r requirements.txt
 
