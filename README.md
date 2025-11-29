@@ -26,9 +26,6 @@ This system provides real-time predictions for email phishing, malicious URLs, a
 - Confusion matrix and classification report
 
 **# Run Locally 🚀**
-
-pip install -r requirements.txt
-
 streamlit run app.py
 
 **Output**
