@@ -1,55 +1,31 @@
-**Cyberattack Detection System**
+## Cyberattack Detection System
+A comprehensive Streamlit dashboard that detects multiple types of cyberattacks using machine learning, deep learning, and NLP-based models.
+This system provides real-time predictions for email phishing, malicious URLs, and DDoS attacks.
 
-A Streamlit dashboard that detects different types of cyberattacks using machine learning and deep learning models.
+# Phishing Email Detection (Bi-LSTM)
+- Processes both the email subject and body text
+- Cleans and tokenizes text using NLTK
+- Uses a Bidirectional LSTM model to classify emails as Phishing or Not Phishing
 
- **Features**
-1.**Phishing Email Detection (Bi-LSTM)**
-
-- Processes subject + message text
-
-- Uses a Bi-LSTM model to classify emails as Phishing or Not Phishing
-
-2. **Phishing URL Detection (NLP + Logistic Regression)**
-
-- Cleans and vectorizes URLs
-
+# Phishing URL Detection (Logistic Regression + NLP)
+- Cleans and normalizes URLs
+- Converts URLs into vector form using CountVectorizer
 - Logistic Regression model predicts whether a URL is Malicious or Safe
 
-3. **DDoS Attack Detection (Neural Network)**
-
+# DDoS Attack Detection (Neural Network)
 - Loads SDN network traffic dataset
+- Extracts numerical features such as packet counts, durations, byte counts, etc.
+- Scales features using StandardScaler
+- Trains a fully connected neural network to classify Normal vs DDoS traffic
 
-- Neural network classifies normal vs DDoS traffic
+# Includes visualizations:
+- Protocol frequency
+- Packet count distribution
+- Byte count distribution
+- Class distribution
+- Confusion matrix and classification report
 
-- Includes visualizations: protocol counts, packet/byte histograms, class distribution
-
-**Streamlit Dashboard 🖥️**
-
-The dashboard includes:
-
-- Scan Email
-- Scan URL
-- Scan DDoS
-Each section provides real-time predictions through a simple interface.
-
-🛠️ **Technologies Used**
-
-- Python
-
-- Streamlit
-
-- TensorFlow / Keras
-
-- Scikit-Learn
-
-- NLTK
-
-- Pandas / NumPy
-
-- Matplotlib / Seaborn
-
-  
-**Run Locally 🚀**
+**# Run Locally 🚀**
 
 pip install -r requirements.txt
 
